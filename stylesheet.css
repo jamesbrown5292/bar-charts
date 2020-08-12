@@ -1,0 +1,56 @@
+.graphContainer {
+  display: grid;
+  width: 400px;
+  height: 400px;
+  grid-template-areas:"yAxis heading heading heading"
+                      "yAxis body body body"
+                      "yAxis body body body"
+                      "xAxis xAxis xAxis xAxis";
+
+  background-color: black;
+
+}
+
+/*STYLESHEET*/
+/*
+#yAxis {
+  height: 600px;
+  width: 5px;
+  background: black;
+
+}
+
+#xAxis {
+  height: 5px;
+  width: 600px;
+  background: black;
+  position: absolute;
+}
+
+.bar {
+  background: black;
+  border: 2px solid white;
+}
+
+.dataLabel {
+  height: 16px;
+  background: white;
+  position: absolute;
+  bottom: -30px;
+}
+
+.scaleMarkerContainer {
+  position: absolute;
+}
+
+.scaleMarker {
+  background: black;
+  height: 5px;
+  width: 20px;
+}
+
+#chartHeading {
+  position: absolute;
+  left: 200px;
+}
+*/
