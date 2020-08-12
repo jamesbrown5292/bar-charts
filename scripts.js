@@ -27,7 +27,7 @@ let addMarkers = function(){
   for(let i=0; i < 5; i++){
     let scaleMarker = scaleMarkerContainer.append($(`<div class="scaleMarker" id="scaleMarker${i}"></div>`))
     document.getElementById(`scaleMarker${i}`).style.top = `${markHeight}px`;
-    markHeight += 80;
+    markHeight += 60;
   };
 };
 
