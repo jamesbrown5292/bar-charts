@@ -15,8 +15,10 @@ let makeGraphContainer = function(){
 
 //Make the y axis
 let makeYAxis = function(){
-  let yAxisContainer = $('<div id="yAxisContainer" class="yAxis"></div>');
+  let yAxisContainer = $('<div id="yAxisContainer" class="yAxisContainer"></div>');
+  let yAxis = $('<div id="yAxis" class="yAxis"></div>')
   $('#graphContainer').append(yAxisContainer);
+  yAxisContainer.append(yAxis);
 
 }
 //add line markers to y-axis
@@ -34,6 +36,8 @@ let addMarkers = function(){
 
 //make the x axis
 let makeXAxis = function(){
-  let xAxisContainer = $('<div id="xAxisContainer" class="xAxis"></div>');
+  let xAxisContainer = $('<div id="xAxisContainer" class="xAxisContainer"></div>');
+  let xAxis = $('<div class="xAxis"></div>');
   $('#graphContainer').append(xAxisContainer);
+  xAxisContainer.append(xAxis);
 }

@@ -10,13 +10,28 @@
 
   background-color: yellow;
 }
+.yAxisContainer{
+  grid-area: yAxis;
+  height: 300px;
+  position: absolute;
+  justify-self: end;
+
+}
+
+.xAxisContainer{
+  grid-area: xAxis;
+  height: 5px;
+  width:300px;
+  align-self: start;  
+  justify-self: start;
+}
 
 .yAxis {
   width: 5px;
   height: 300px;
   background-color: black;
   position: absolute;
-  grid-area: yAxis
+  justify-self: end;
 }
 
 .xAxis {
@@ -24,7 +39,6 @@
   height: 5px;
   background-color: black;
   grid-area: xAxis;
-  align-self: start;
   position: relative;
 }
 .scaleMarkerContainer {
