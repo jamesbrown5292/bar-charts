@@ -1,5 +1,6 @@
 let optionsObject = {};
 let dataArray = [12, 34, 56, 23, 67, 34, 56];
+let graphTitle = "Demo Graph"
 
 //Check the document is ready - has no use - more of a jQuery demo for personal exp 
 $(document).ready(function() {
@@ -33,11 +34,17 @@ let addMarkers = function(){
   };
 };
 
-
 //make the x axis
 let makeXAxis = function(){
   let xAxisContainer = $('<div id="xAxisContainer" class="xAxisContainer"></div>');
   let xAxis = $('<div class="xAxis"></div>');
   $('#graphContainer').append(xAxisContainer);
   xAxisContainer.append(xAxis);
+};
+
+//add a title to the graph
+let addTitle = function(){
+  let titleContainer = $('<div id="titleContainer" class="titleContainer"></div>');
+  $('#graphContainer').append(titleContainer);
+  titleContainer.append($(`<h2 id="graphTitle">${graphTitle}</h2>`))
 }

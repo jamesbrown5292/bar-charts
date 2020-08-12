@@ -53,6 +53,14 @@
   position: absolute;
 }
 
+.titleContainer {
+  width: 300px;
+  height: 40px;
+  grid-area: heading;
+  position: absolute;
+  left: 100px;
+}
+
 /*STYLESHEET*/
 /*
 #yAxis {
