@@ -13,11 +13,26 @@ let makeGraphContainer = function(){
     $('body').append(graphContainer);
 };
 
+//Make the y axis
 let makeYAxis = function(){
-    let yAxisContainer = $('<div id="yAxisContainer" class="yAxis"></div>');
-    $('#graphContainer').append(yAxisContainer);
-}
+  let yAxisContainer = $('<div id="yAxisContainer" class="yAxis"></div>');
+  $('#graphContainer').append(yAxisContainer);
 
+}
+//add line markers to y-axis
+let addMarkers = function(){
+  let markHeight = 0;
+  let scaleMarkerContainer = $('<div class="scaleMarkerContainer"></div>');
+  $('#yAxisContainer').append(scaleMarkerContainer);
+  for(let i=0; i < 5; i++){
+    let scaleMarker = scaleMarkerContainer.append($(`<div class="scaleMarker" id="scaleMarker${i}"></div>`))
+    document.getElementById(`scaleMarker${i}`).style.top = `${markHeight}px`;
+    markHeight += 80;
+  };
+};
+
+
+//make the x axis
 let makeXAxis = function(){
   let xAxisContainer = $('<div id="xAxisContainer" class="xAxis"></div>');
   $('#graphContainer').append(xAxisContainer);

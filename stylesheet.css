@@ -1,3 +1,4 @@
+
 .graphContainer {
   display: grid;
   width: 400px;
@@ -8,7 +9,6 @@
                       "xAxis xAxis xAxis xAxis";
 
   background-color: yellow;
-
 }
 
 .yAxis {
@@ -28,6 +28,18 @@
   position: relative;
   top: -10px;
 }
+.scaleMarkerContainer {
+  height: 400px;
+  width: 400px;
+
+}
+.scaleMarker {
+  background: black;
+  height: 5px;
+  width: 20px;
+  position: absolute;
+}
+
 /*STYLESHEET*/
 /*
 #yAxis {
@@ -60,11 +72,7 @@
   position: absolute;
 }
 
-.scaleMarker {
-  background: black;
-  height: 5px;
-  width: 20px;
-}
+
 
 #chartHeading {
   position: absolute;
