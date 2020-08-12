@@ -25,6 +25,8 @@
   background-color: black;
   grid-area: xAxis;
   align-self: center;
+  position: relative;
+  top: -10px;
 }
 /*STYLESHEET*/
 /*
