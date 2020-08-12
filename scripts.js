@@ -1,6 +1,5 @@
 let optionsObject = {};
 let dataArray = [12, 34, 56, 23, 67, 34, 56];
-let graphContainers = 0;
 
 //Check the document is ready - has no use - more of a jQuery demo for personal exp 
 $(document).ready(function() {
@@ -10,11 +9,16 @@ $(document).ready(function() {
 //Make a containing div for the graph and append it to the page
 //has the dispay grid property and grid template set
 let makeGraphContainer = function(){
-  if (graphContainers < 1) { //only one per page
     let graphContainer = $('<div id="graphContainer" class="graphContainer"></div>');
-  $('body').prepend(graphContainer);
-  graphContainers = 1;
-  } 
+    $('body').append(graphContainer);
 };
 
-let 
+let makeYAxis = function(){
+    let yAxisContainer = $('<div id="yAxisContainer" class="yAxis"></div>');
+    $('#graphContainer').append(yAxisContainer);
+}
+
+let makeXAxis = function(){
+  let xAxisContainer = $('<div id="xAxisContainer" class="xAxis"></div>');
+  $('#graphContainer').append(xAxisContainer);
+}

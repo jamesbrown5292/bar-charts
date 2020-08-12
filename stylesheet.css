@@ -7,10 +7,25 @@
                       "yAxis body body body"
                       "xAxis xAxis xAxis xAxis";
 
-  background-color: black;
+  background-color: yellow;
 
 }
 
+.yAxis {
+  width: 5px;
+  height: 340px;
+  background-color: black;
+  position: absolute;
+  grid-area: yAxis
+}
+
+.xAxis {
+  width: 340px;
+  height: 5px;
+  background-color: black;
+  grid-area: xAxis;
+  align-self: center;
+}
 /*STYLESHEET*/
 /*
 #yAxis {
